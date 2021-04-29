@@ -11,8 +11,8 @@ class Config(object):
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'helen-sql-server.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'helen-flask-project-db'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'helengoh'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '168193Zacc.'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'XXXXXXX'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'xxxxxxxx'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
